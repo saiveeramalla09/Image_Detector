@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>DIGIT PREDICTOR</h1>
+        <P>- - - Draw a digit below and let the AI predict what you wrote. - - - </P>
+    </header>
+
+    <div class="container">
+
+        <p>Draw a digit Here  ⬇</p>
+
+        <canvas id="drawingCanvas" width="280" height="280"></canvas>
+
+        <div class="buttons">
+            <button style="background-color: rgb(130, 57, 57)" id="but1">Clear</button>
+            <button style="border-color: aqua;" id="but2">Predict</button>
+        </div>
+    </div>
+
+    <div class="result-container">
+
+    <div class="result-box">
+        <p class="result-label">PREDICTION</p>
+        <span id="prediction">--</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="result-box">
+        <p class="result-label">CONFIDENCE</p>
+        <span id="confidence">--</span><span class="percentage">%</span>
+    </div>
+
+</div>
+
+    <span class="spann">Model can make mistakes. Check important info</span>
+
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
